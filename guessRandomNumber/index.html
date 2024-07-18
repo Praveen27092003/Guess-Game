@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>GUESS NUMBER GAME</title>
+  </head>
+
+  <body>
+
+  <h1 style="text-align: center; color: white; background-color: black;">GUESS RANDOM NUMBER GAME</h1>
+
+    <div class="container">
+        <h1 class="firsth1">GUESS NUMBER BETWEEN 1 TO 10</h1>
+        <input type="text" id="get-input" placeholder="Enter the Number">
+        <button onclick="finding()" id="styled-button">CHECK</button>
+        <h1 id="decision"> YOUR ARE</h1>
+        <h2 id="score">YOUR SCORE: 10</h2>
+    </div>
+
+
+
+    <!-- script -->
+<script>
+    var a =document.getElementById("get-input");
+   
+    var h1 = document.getElementById("decision");
+    var h2 = document.getElementById("score");
+    var mark = 10;
+    var guessNumber = Math.floor(Math.random()*10)+1;
+    console.log(guessNumber);
+
+    function finding(){
+       var  enterednumber = a.value;
+        
+        if(guessNumber == enterednumber){
+            h1.textContent = "YOUR ARE CORRECT";
+           
+        }
+        else{
+            mark = mark-1;
+            h1.textContent = "YOUR ARE  WRONG";
+            h2.textContent = "YOUR SCORE:" + mark;
+
+
+
+        }
+    }
+    
+</script>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<

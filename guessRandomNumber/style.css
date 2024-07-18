@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    width: 660px;
+    color:#684d56 ;
+    background: #eed0c1;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin: 100px auto;
+}
+
+
+.container .firsth1{
+    color: #507b76;
+    margin-top: 20px;
+}
+
+#get-input{
+    margin-top: 100px;
+    width: 300px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+#get-input:focus {
+    border-color: #e7b59c;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#get-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+#styled-button {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: 	#684d56;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 10px 10px  rgba(0, 0, 0, 0.1);
+}
+
+#styled-button:hover {
+    background-color: #eed0c1;
+}
+
+#styled-button:active {
+    background-color: #004080;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+#decision{
+ color: #2a4d69;
+ margin-top: 50px;
+}
+
+#score{
+    margin-top: 20px;
+}
